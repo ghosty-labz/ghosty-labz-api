@@ -4,8 +4,8 @@ compatibility_date = "2025-01-11"
 
 # compatibility_flags = [ "nodejs_compat" ]
 
-# [vars]
-# MY_VAR = "my-variable"
+[vars]
+RESEND_API_KEY = "re_ZDi553FC_DRozkveZyVRS6onG6sk4CmRC"
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
