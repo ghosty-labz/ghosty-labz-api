@@ -5,7 +5,7 @@ compatibility_date = "2025-01-11"
 # compatibility_flags = [ "nodejs_compat" ]
 
 [vars]
-RESEND_API_KEY = "re_ZDi553FC_DRozkveZyVRS6onG6sk4CmRC"
+RESEND_API_KEY = "token"
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
