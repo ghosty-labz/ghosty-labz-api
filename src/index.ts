@@ -33,10 +33,10 @@ app.post(
     console.log(name);
     const resend = new Resend(c.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "Ghosty Labz <onboarding@resend.dev>",
       to: ["delivered@resend.dev"],
       subject: "hello world",
-      html: "<strong>It works!</strong>",
+      html: "<strong>It works! 🧪</strong>",
     });
     return c.json(
       {
