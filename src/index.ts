@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 import { validator } from "hono/validator";
 import { z } from "zod";
 import { Resend } from "resend";
@@ -14,6 +15,8 @@ type Bindings = {
 };
 
 const app = new Hono<{ Bindings: Bindings }>();
+
+app.use("/contacts", cors());
 
 app.get("/", (c) => {
   return c.text("Hello from Ghosty Labz 🧪");
