@@ -5,12 +5,14 @@
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.32",
     "hono": "^4.6.16",
     "resend": "^4.0.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241218.0",
+    "@types/react": "^19.0.7",
     "wrangler": "^3.96.0"
   }
 }

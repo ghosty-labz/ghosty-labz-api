@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { validator } from "hono/validator";
 import { z } from "zod";
 import { Resend } from "resend";
+import GhostyContactEmail from "./email";
 
 const schema = z.object({
   name: z.string(),
@@ -32,14 +33,13 @@ app.post(
     return parsed.data;
   }),
   async (c) => {
-    const { name } = c.req.valid("json");
-    console.log(name);
+    const { email } = c.req.valid("json");
     const resend = new Resend(c.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: "Ghosty Labz <onboarding@resend.dev>",
-      to: ["delivered@resend.dev"],
-      subject: "hello world",
-      html: "<strong>It works! 🧪</strong>",
+      from: "Ghosty Labz <labz@updates.garyvarner.me>",
+      to: email,
+      subject: "New Lead",
+      react: <GhostyContactEmail />,
     });
     return c.json(
       {
