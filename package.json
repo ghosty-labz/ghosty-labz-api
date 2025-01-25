@@ -5,6 +5,7 @@
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
+    "@aws-sdk/client-sesv2": "^3.734.0",
     "@react-email/components": "^0.0.32",
     "hono": "^4.6.16",
     "resend": "^4.0.1",
