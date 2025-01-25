@@ -46,7 +46,7 @@ app.post(
     });
     const emailHtml = await render(<GhostyContactEmail />);
     const params: SendEmailCommandInput = {
-      FromEmailAddress: "updates@ghostylabz.com",
+      FromEmailAddress: "Ghosty Labz <updates@ghostylabz.com>",
       Destination: {
         ToAddresses: [email],
       },
