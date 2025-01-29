@@ -51,17 +51,13 @@ app.post(
         ToAddresses: [email],
       },
       Content: {
-        // EmailContent
         Simple: {
-          // Message
           Subject: {
-            // Content
-            Data: "Hey 👋", // required
+            Data: "Hey 👋",
           },
           Body: {
-            // Body
             Html: {
-              Data: emailHtml, // required
+              Data: emailHtml,
               Charset: "UTF-8",
             },
           },

@@ -53,7 +53,7 @@ export const GhostyContactEmail = () => {
             <Section>
               <Row>
                 <Text className="text-base">
-                  We’ve received your message and will get back to you as soon
+                  We've received your message and will get back to you as soon
                   as possible. In the meantime, feel free to check out our blog
                   for the latest updates and insights.
                 </Text>
